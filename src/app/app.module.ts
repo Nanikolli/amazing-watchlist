@@ -9,7 +9,11 @@ import { SearchComponent } from './search/search.component';
 import { ShowDetailsComponent } from './show-details/show-details.component';
 import { ShowInfoComponent } from './show-info/show-info.component';
 import { WatchlistComponent } from './watchlist/watchlist.component';
-
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatInputModule} from '@angular/material/input';
+import {FormsModule} from '@angular/forms';
+import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +26,12 @@ import { WatchlistComponent } from './watchlist/watchlist.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatToolbarModule,
+    MatInputModule,
+    FormsModule,
+    MatButtonModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
